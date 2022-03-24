@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/lista-de-compra/static/css/main.038bc75b.css",
-    "main.js": "/lista-de-compra/static/js/main.6e323536.js",
-    "static/js/787.bc30ca85.chunk.js": "/lista-de-compra/static/js/787.bc30ca85.chunk.js",
-    "index.html": "/lista-de-compra/index.html",
-    "main.038bc75b.css.map": "/lista-de-compra/static/css/main.038bc75b.css.map",
-    "main.6e323536.js.map": "/lista-de-compra/static/js/main.6e323536.js.map",
-    "787.bc30ca85.chunk.js.map": "/lista-de-compra/static/js/787.bc30ca85.chunk.js.map"
+    "main.css": "/lista-compras-react/static/css/main.038bc75b.css",
+    "main.js": "/lista-compras-react/static/js/main.e36692b3.js",
+    "static/js/787.bc30ca85.chunk.js": "/lista-compras-react/static/js/787.bc30ca85.chunk.js",
+    "index.html": "/lista-compras-react/index.html",
+    "main.038bc75b.css.map": "/lista-compras-react/static/css/main.038bc75b.css.map",
+    "main.e36692b3.js.map": "/lista-compras-react/static/js/main.e36692b3.js.map",
+    "787.bc30ca85.chunk.js.map": "/lista-compras-react/static/js/787.bc30ca85.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.038bc75b.css",
-    "static/js/main.6e323536.js"
+    "static/js/main.e36692b3.js"
   ]
 }
