@@ -6,7 +6,6 @@ function Tarefas() {
 
   function marcarCheckbox(index) {
     const novaLista = listaTarefas.map((itemProduto, indexProduto) => {
-
       if(indexProduto === index){
         return {
           ...itemProduto,
@@ -18,13 +17,14 @@ function Tarefas() {
     setListaTarefas(novaLista)
   }
 
-  const setGeral = () =>{
+  const salvar = () =>{
     if(produto.length < 2){
-    return alert('digite o item que deseja comprar');
-   }
-   setListaTarefas([...listaTarefas, {
-   produto:produto, marcado:false 
-  }])}
+      return alert('digite o item que deseja comprar');
+    }
+    setListaTarefas([...listaTarefas, {
+      produto:produto, marcado:false 
+    }]);
+  };
 
   const filtrados = listaTarefas.filter(value => value.marcado);
   const result = filtrados.length;
@@ -38,7 +38,7 @@ function Tarefas() {
         value={produto}
       />
       <button 
-        onClick={setGeral} >
+        onClick={salvar} >
         Listar Compra
       </button>
 
