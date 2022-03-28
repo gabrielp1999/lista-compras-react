@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-// Criar uma função que checa se o checkbox esta marcado
-
 function Tarefas() {
   const [listaTarefas, setListaTarefas] = useState([]);
   const [produto, setProduto] = useState("");
@@ -15,15 +13,22 @@ function Tarefas() {
           marcado: !itemProduto.marcado
         }
       }
-      
       return itemProduto;
     })
     setListaTarefas(novaLista)
   }
 
+  const setGeral = () =>{
+    if(produto.length < 2){
+    return alert('digite o item que deseja comprar');
+   }
+   setListaTarefas([...listaTarefas, {
+   produto:produto, marcado:false 
+  }])}
+
   const filtrados = listaTarefas.filter(value => value.marcado);
   const result = filtrados.length;
-  
+    
   return(
     <div className="Tarefa">
       <h3>Lista de Compras</h3>
@@ -33,13 +38,7 @@ function Tarefas() {
         value={produto}
       />
       <button 
-        onClick={() =>{
-           if(produto.length < 2){
-           return alert('digite o item que deseja comprar');
-          }
-         setListaTarefas([...listaTarefas, {
-          produto:produto, marcado:false 
-        }])} } >
+        onClick={setGeral} >
         Listar Compra
       </button>
 

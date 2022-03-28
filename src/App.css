@@ -14,11 +14,14 @@ width: 100%;
   border:  2px solid black;
   margin: 10px auto 0;
   padding: 15px;
-  background-color: rgb(8, 187, 163);
+  background-color: rgba(20, 30, 40, 0.2);
 }
 
 input {
-  margin: 5px 10px;
+  margin: 5px 5px;
+  background-color: white;
+  font-size: 14px;
+  padding: 1px 5px;
 }
 
 h3 {
